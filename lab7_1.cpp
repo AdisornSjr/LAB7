@@ -5,7 +5,7 @@ using namespace std;
 
 string func1(string x){
 	int i = 0, L = x.size();
-	string y = "";
+	string y;
 	while(i < L){
 		y += x[L-i-1];
 		i++;
@@ -33,9 +33,17 @@ string func3(string x){
 	return y;	
 }
 
+
 int main(){
-    cout >> "Input text: "
-    cout >> "Reversed text: "
-    cout >> "Palindrome: "
+    string x;
+	cout << "Input text: ";
+	cin >> x;
+	cout << "Reversed text: " << func1(x) << endl;
+    if(func2(func1(x)) == func2(x)){
+		cout << "Palindrome: Yes";
+	}else{
+		cout << "Palindrome: No";
+
+	}
     return 0;
 }
