@@ -21,12 +21,11 @@ int main(){
                 }else{
                     result = result + P[i];
                 }
-             }else{
-                cout << result;
             }
             i++;        
         }  
         cout << "Result = " << result;
+        
     }else{
         cout << "Invalid input!!!";
     }
